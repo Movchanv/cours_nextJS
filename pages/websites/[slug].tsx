@@ -17,7 +17,6 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
     (res) => res.json(),
   );
   const currentWebsite = websites.find((w: WebsiteType) => w.slug == slug);
-  console.log("currentWebsite: ", currentWebsite);
   if (!currentWebsite) return { redirect: { destination: "/websites" } };
 
   return { props: { website: currentWebsite } };

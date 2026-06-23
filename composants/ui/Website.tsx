@@ -7,7 +7,6 @@ export default function Website({
 }: {
   website: WebsiteType;
 }) {
-  console.log(`websites/${slug}`);
   return (
     <Link href={`websites/${slug}`}>
       <div className="relative">
