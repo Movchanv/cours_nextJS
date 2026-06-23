@@ -21,12 +21,14 @@ export default function WebsitesPage({ websites }: WebsitesPageType) {
   return (
     <div>
       <h1>WebsitesPage</h1>
-      {websites &&
-        websites.map((w, i) => (
-          <Link key={`website-${i}`} href={`/websites/${w.slug}`}>
-            <Website website={w} />
-          </Link>
-        ))}
+      <div className="flex">
+        {websites &&
+          websites.map((w, i) => (
+            <Link key={`website-${i}`} href={`/websites/${w.slug}`}>
+              <Website website={w} />
+            </Link>
+          ))}
+      </div>
     </div>
   );
 }
