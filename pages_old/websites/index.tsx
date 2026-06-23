@@ -13,6 +13,7 @@ export async function getStaticProps() {
 type WebsitesPageType = {
   websites: WebsiteType[];
 };
+
 export default function WebsitesPage({ websites }: WebsitesPageType) {
   return (
     <main className="px-6 py-12">

@@ -1,3 +1,5 @@
+"use client";
+
 type ButtonType = {
   onClick?: () => void;
   children: React.ReactNode;
