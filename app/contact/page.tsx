@@ -1,11 +1,34 @@
-import { getMetadata } from "@/libs/metadata";
+import { submitContact } from "@/actions/contact";
 
-type ContactPageType = {};
+export default function ContactPage() {
+  return (
+    <main>
+      <h1>Server Action</h1>
 
-export async function generateStaticParams() {
-  return getMetadata("contact");
-}
+      <form action={submitContact}>
+        <div>
+          <label htmlFor="subject">Objet</label>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            required
+          />
+        </div>
 
-export default function ContactPage({}: ContactPageType) {
-  return <main>ContactPage</main>;
+        <div>
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+          />
+        </div>
+
+        <button type="submit">
+          Envoyer
+        </button>
+      </form>
+    </main>
+  );
 }
