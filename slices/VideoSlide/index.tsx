@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
-import VideoPlayer from "@/components/ui/Video";
+import Video from "@/composants/ui/Video";
 
 export type VideoSlideProps = SliceComponentProps<Content.VideoSlideSlice>;
 
@@ -14,7 +14,7 @@ const VideoSlide: FC<VideoSlideProps> = ({ slice }) => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <VideoPlayer id={slice.primary.video} />
+      <Video id={slice.primary.video} />
     </section>
   );
 };
