@@ -1,9 +1,7 @@
 {
-  "format": "custom",
   "id": "menu",
   "label": "Menu",
   "repeatable": false,
-  "status": true,
   "json": {
     "Main": {
       "links": {
@@ -18,5 +16,7 @@
         }
       }
     }
-  }
+  },
+  "status": true,
+  "format": "custom"
 }

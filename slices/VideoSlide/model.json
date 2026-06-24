@@ -2,15 +2,14 @@
   "id": "video_slide",
   "type": "SharedSlice",
   "name": "VideoSlide",
-  "description": "VideoSlide",
   "variations": [
     {
       "id": "default",
       "name": "Default",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/nextjsvlad/shared-slices/video_slide/default/a971cf523c971654902488bbcc7390b6d78029ef.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
       "primary": {
         "video": {
           "type": "Text",
@@ -22,5 +21,6 @@
       },
       "items": {}
     }
-  ]
+  ],
+  "description": "VideoSlide"
 }

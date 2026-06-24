@@ -2,15 +2,14 @@
   "id": "images_slice",
   "type": "SharedSlice",
   "name": "ImagesSlice",
-  "description": "ImagesSlice",
   "variations": [
     {
       "id": "default",
       "name": "Default",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/nextjsvlad/shared-slices/images_slice/default/9db376028209a0dfc56d31818912a390b6dde4d2.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
       "primary": {
         "images": {
           "type": "Group",
@@ -32,5 +31,6 @@
       },
       "items": {}
     }
-  ]
+  ],
+  "description": "ImagesSlice"
 }

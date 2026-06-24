@@ -2,15 +2,14 @@
   "id": "text_slice",
   "type": "SharedSlice",
   "name": "TextSlice",
-  "description": "TextSlice",
   "variations": [
     {
       "id": "default",
       "name": "Default",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/nextjsvlad/shared-slices/text_slice/default/7c873fdabc3330907dc8ac0fccd2b22176acfc15.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
       "primary": {
         "title": {
           "type": "Text",
@@ -24,12 +23,13 @@
           "config": {
             "label": "Texte",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "preformatted,heading1,heading5,heading6,image,embed,rtl,heading4,heading3,heading2,o-list-item,em"
+            "multi": "preformatted,heading1,heading5,heading6,image,embed,rtl,heading4,heading3,heading2,o-list-item,em",
+            "allowTargetBlank": true
           }
         }
       },
       "items": {}
     }
-  ]
+  ],
+  "description": "TextSlice"
 }

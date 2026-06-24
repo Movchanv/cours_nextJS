@@ -1,0 +1,28 @@
+{
+  "repositoryName": "nextjsvlad",
+  "libraries": [
+    "./slices"
+  ],
+  "routes": [
+    {
+      "type": "contact",
+      "path": "/contact"
+    },
+    {
+      "type": "home",
+      "path": "/home"
+    },
+    {
+      "type": "mentions",
+      "path": "/mentions"
+    },
+    {
+      "type": "website",
+      "path": "/website/:uid"
+    },
+    {
+      "type": "websites",
+      "path": "/websites"
+    }
+  ]
+}
