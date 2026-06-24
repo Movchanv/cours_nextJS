@@ -19,6 +19,22 @@ type WebsitePageType = {
   params: Promise<{ slug: string }>;
 };
 
+// export async function generateMetadata({ params }: WebsitePageType) {
+  // const { slug } = await params;
+  // const client = createClient();
+  // const website = await client.getByUID("website", slug);
+
+
+  // return {
+      // title: website.data.meta_title,
+    // description: website.data.meta_description,
+    // openGraph: {
+      // image: website.data.meta_image
+    // }
+    
+  //}
+// }
+
 export default async function WebsitePage({ params }: WebsitePageType) {
   const { slug } = await params;
   const client = createClient();

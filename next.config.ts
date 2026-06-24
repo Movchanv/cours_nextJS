@@ -13,7 +13,16 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // async redirects() {
+    // return [
+      // {
+        // source: "/",
+        // destination: "/websites",
+        // permanent: true,
+      // },
+    // ];
+  // }
 };
-
+// module.exports = nextConfig;
 const withMDX = createMDX();
 export default withMDX(nextConfig);

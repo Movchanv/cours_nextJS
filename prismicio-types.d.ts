@@ -413,7 +413,7 @@ interface WebsitesDocumentData {
    * - **Documentation**: https://prismic.io/docs/slices
    */
   slices: prismic.SliceZone<WebsitesDocumentDataSlicesSlice>; /**
-   * Meta Title field in *Sites web*
+   * Some titre field in *Sites web*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A title of the page used for social media and search engines

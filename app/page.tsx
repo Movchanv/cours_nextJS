@@ -5,6 +5,18 @@ import Website from "@/composants/ui/Website";
 import WebsiteHeader from "@/composants/ui/WebsiteHeader";
 import { createClient } from "@/prismicio";
 
+export const metadata = {
+  title: "Accueil",
+  description: "Des trucs.",
+};
+
+// export async function generateMetadata(params) {
+  // const client = createClient();
+  // const websites = await client.getAllByType("website");
+  // const website = websites[0];
+// }
+
+
 export default async function HomePage() {
   const client = createClient();
   const websites = await client.getAllByType("website");
