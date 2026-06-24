@@ -1,8 +1,12 @@
 "use client";
+
 import Link from "next/link";
 import Logo from "../ui/Logo";
+import { usePinStore } from "@/store/usePinStore";
 
 export default function Header() {
+  const pins = usePinStore((state) => state.pins);
+
   return (
     <header className="flex items-center gap-5 py-8 px-6">
       <Logo />
@@ -12,9 +16,11 @@ export default function Header() {
           <li>
             <Link href="/websites">Sites web</Link>
           </li>
+
           <li>
             <Link href="/contact">Contact</Link>
           </li>
+
           <li className="hidden md:block flex-1">
             <form
               role="search"
@@ -23,6 +29,7 @@ export default function Header() {
               <button type="submit" className="flex">
                 <span className="material-symbols-outlined">search</span>
               </button>
+
               <input
                 type="search"
                 placeholder="Rechercher par tags"
@@ -30,12 +37,14 @@ export default function Header() {
               />
             </form>
           </li>
+
           <li>
-            <Link href="/pins" className="flex items-center">
-              13
+            <Link href="/pins" className="flex items-center gap-1">
+              {pins}
               <span className="material-symbols-outlined">keep</span>
             </Link>
           </li>
+
           <li>
             <ul className="flex gap-1 border rounded p-1 text-tiny">
               <li className="pr-1 border-r">EN</li>
